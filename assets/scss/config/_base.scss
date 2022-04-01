@@ -1,0 +1,90 @@
+@use 'variables' as *;
+/*=============== GENERAL STYLES===============*/
+body {
+  font-family: $fam-font;
+  font-size: $fs-normal;
+  font-weight: $fw-medium;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+}
+
+h1,
+h2 {
+  font-size: $fs-big;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 25px;
+}
+.section {
+  padding: 4.5rem 0 1rem;
+}
+.blog-post {
+  width: clamp(45ch, 50%, 75ch);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.flow > * + * {
+  margin-bottom: 1rem;
+}
+
+.padding-24 {
+  padding: 1.5rem;
+}
+.padding-48 {
+  padding: 3rem;
+}
+
+.br-1 {
+  border-radius: 0.5rem;
+}
+.br-2 {
+  border-radius: 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1em 2em;
+  font-weight: $fw-bold;
+  font-size: 1rem;
+  line-height: 1;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}

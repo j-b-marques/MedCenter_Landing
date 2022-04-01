@@ -1,0 +1,33 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@300;400;500;700;900&display=swap');
+/*=============== VARIABLES CSS ===============*/
+
+/*========== Colors ==========*/
+$body-color: #ffffff;
+$brand-color: #0c0e23;
+$action-color: #7fe2f9;
+
+/*========== Font and typography ==========*/
+$fam-font: 'Roboto', sans-serif;
+$title-font: 'Oranienbaum', serif;
+$fs-big: 1.5rem;
+$fs-normal: 0.938rem;
+$fs-small: 0.813rem;
+
+//Weight
+$fw-light: 300;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-bolder: 900;
+
+// Responsive typography
+@media screen and (min-width: 968px) {
+  $fs-big: 2rem;
+  $fs-normal: 1rem;
+  $fs-small: 0.875rem;
+}
+
+/*========== Z index ==========*/
+$z-1: 100;
+$z-2: 10;
+$z-3: 1;
