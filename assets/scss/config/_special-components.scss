@@ -1,0 +1,57 @@
+@use 'variables' as *;
+
+//*******************************
+/* From cssbuttons.io by @alexmaracinaru */
+.btn__staff {
+  cursor: pointer;
+  border: none;
+  background: none;
+  margin-left: auto;
+  font-family: $fam-font;
+  font-weight: $fw-bold;
+}
+
+.btn__staff span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.btn__staff svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.btn__staff:hover svg {
+  transform: translateX(0);
+}
+
+.btn__staff:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: $action-color;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: $action-color;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btn__staff:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -16,9 +16,8 @@ closeMenu.addEventListener('click', () => {
 
 //*Default behaviour from submit button
 
-/* const submitBtn = document.querySelector('.submit__btn');
+const submitBtn = document.querySelector('.btn__form');
 
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault(); //* for demo purposes
 });
- */

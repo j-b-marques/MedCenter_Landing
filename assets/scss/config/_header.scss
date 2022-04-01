@@ -1,0 +1,126 @@
+@use 'variables' as *;
+
+header {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  background-color: $action-color;
+  height: 100%;
+  width: 200px;
+  transform: skewX(15deg);
+  top: 0;
+  right: -110px;
+  z-index: 2;
+}
+
+.header__ct {
+  position: relative;
+  z-index: 3;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: $fs-big;
+    margin-bottom: 100px;
+
+    .brand__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: $action-color;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+    }
+
+    span i {
+      cursor: pointer;
+      color: $body-color;
+    }
+  }
+
+  .header__lead__wrapper {
+    margin-bottom: 100px;
+
+    h1 {
+      font-size: $fs-big;
+      font-weight: $fw-bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      font-weight: $fw-medium;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      font-weight: $fw-bold;
+    }
+
+    button {
+      background-color: $action-color;
+      width: fit-content;
+      border-radius: 22px;
+      color: $body-color;
+      text-transform: uppercase;
+      font-size: $fs-small;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .header__bottom__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .service {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      i {
+        color: $action-color;
+        font-size: $fs-big;
+      }
+      span {
+        font-size: $fs-normal;
+      }
+    }
+  }
+}
+
+//*****MOBILE NAV********
+.nav__mobile__menu {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  height: 100%;
+  width: 20ch;
+  padding: 150px 15px 0;
+  transition: all 0.5s ease-in-out;
+
+  i {
+    position: absolute;
+    font-size: $fs-big;
+    top: 5%;
+    right: 20%;
+    cursor: pointer;
+  }
+
+  a {
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: $action-color;
+    &:hover {
+      text-decoration: underline;
+      color: $brand-color;
+    }
+  }
+}

@@ -183,13 +183,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/******ALL FILES TO IMPORT*****/
-/**Develop Styles*/
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
-}
-
 header {
   height: 100vh;
   position: relative;
@@ -202,9 +195,9 @@ header {
   background-color: #7fe2f9;
   height: 100%;
   width: 200px;
-  transform: skewX(10deg);
+  transform: skewX(15deg);
   top: 0;
-  right: -100px;
+  right: -110px;
   z-index: 2;
 }
 
@@ -235,8 +228,9 @@ header {
 }
 .header__ct .header__lead__wrapper h1 {
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .header__ct .header__lead__wrapper p {
   font-weight: 500;
@@ -272,7 +266,7 @@ header {
   font-size: 1.5rem;
 }
 .header__ct .header__bottom__wrapper .service span {
-  font-size: 0.813rem;
+  font-size: 0.938rem;
 }
 
 .nav__mobile__menu {
@@ -304,4 +298,239 @@ header {
 .nav__mobile__menu a:hover {
   text-decoration: underline;
   color: #0c0e23;
+}
+
+/* From cssbuttons.io by @alexmaracinaru */
+.btn__staff {
+  cursor: pointer;
+  border: none;
+  background: none;
+  margin-left: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.btn__staff span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.btn__staff svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.btn__staff:hover svg {
+  transform: translateX(0);
+}
+
+.btn__staff:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #7fe2f9;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #7fe2f9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.btn__staff:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/******ALL FILES TO IMPORT*****/
+/**Develop Styles*/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.services .services__ct h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.services .services__ct .card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.services .services__ct .card__wrapper .card {
+  color: #7fe2f9;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 35px 0;
+  border-radius: 18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.services .services__ct .card__wrapper .card i {
+  font-size: 2rem;
+}
+.services .services__ct .card__wrapper .card span {
+  font-size: 0.938rem;
+}
+.services .services__ct .card__wrapper .card:hover {
+  background-color: #7fe2f9;
+  color: #ffffff;
+}
+
+.contact .contact__ct {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.contact .contact__ct .info__wrapper h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.contact .contact__ct .info__wrapper p {
+  margin-bottom: 20px;
+}
+.contact .contact__ct form {
+  margin-bottom: 50px;
+  color: #0c0e23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.contact .contact__ct form h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact .contact__ct form span {
+  margin-bottom: 20px;
+}
+.contact .contact__ct form input {
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid rgb(206, 204, 204);
+  padding: 5px 0;
+  display: block;
+  margin-bottom: 10px;
+}
+.contact .contact__ct form input::-moz-placeholder {
+  color: rgb(168, 165, 165);
+  font-size: 0.813rem;
+}
+.contact .contact__ct form input:-ms-input-placeholder {
+  color: rgb(168, 165, 165);
+  font-size: 0.813rem;
+}
+.contact .contact__ct form input::placeholder {
+  color: rgb(168, 165, 165);
+  font-size: 0.813rem;
+}
+.contact .contact__ct form button {
+  cursor: pointer;
+  background-color: #7fe2f9;
+  width: 90%;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+.contact .contact__ct form button:hover {
+  opacity: 0.9;
+}
+.contact .contact__ct .details__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact .contact__ct .details__wrapper .detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact .contact__ct .details__wrapper .detail .i_1 {
+  margin-left: 10px;
+}
+.contact .contact__ct .details__wrapper .detail h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.contact .contact__ct .details__wrapper .detail h4 p {
+  font-size: 0.813rem;
+}
+.contact .contact__ct .details__wrapper .detail i {
+  color: #7fe2f9;
+  font-size: 1.8rem;
+}
+
+.staff .staff__ct .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  border: 2px solid #7fe2f9;
+  border-radius: 22px;
+}
+.staff .staff__ct .card .card__staff__definition {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.staff .staff__ct .card .img__wp {
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(249, 249, 249);
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin-bottom: 30px;
+}
+.staff .staff__ct .card .img__wp img {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.staff .staff__ct .card .name__staff,
+.staff .staff__ct .card span:first-of-type {
+  margin-right: auto;
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+.staff .staff__ct .card .name__staff {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.staff .staff__ct .card .rating {
+  margin-bottom: 40px;
+}
+.staff .staff__ct .card .rating i {
+  color: rgb(232, 171, 5);
 }/*# sourceMappingURL=styles.css.map */
