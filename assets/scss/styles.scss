@@ -197,3 +197,136 @@ body {
     }
   }
 }
+
+//**********
+.blog {
+  .blog__ct {
+    .blog__lead__wrapper {
+      margin-bottom: 40px;
+      h1 {
+        font-size: $fs-big;
+        font-weight: $fw-bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      p {
+        font-weight: $fw-medium;
+      }
+    }
+    .blog__content__wrapper {
+      img {
+        margin-bottom: 20px;
+        border-radius: 22px;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+      }
+
+      h2 {
+        font-size: $fs-big;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+      button {
+        float: inline-end;
+      }
+    }
+  }
+}
+
+//**********
+.map {
+  padding-bottom: 0;
+  .map__ct {
+    background-color: $action-color;
+    .contact__map__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: $body-color;
+      h1 {
+        font-size: $fs-big;
+        font-weight: $fw-bold;
+      }
+      h2 {
+        font-weight: $fw-bold;
+        font-size: $fs-normal;
+      }
+      span {
+        font-weight: $fw-light;
+      }
+      .socials {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .map__wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//*********
+
+footer {
+  background-color: #f6f6f6;
+
+  .footer__ct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .brand__logo__ft {
+      color: $action-color;
+      font-size: $fs-big;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .links__ft__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+
+      .footer__links {
+        display: flex;
+        flex-direction: column;
+        a {
+          color: $brand-color;
+          font-size: $fs-normal;
+          font-weight: $fw-medium;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .btn__footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        button {
+          border: 1px solid black;
+          width: fit-content;
+          font-weight: $fw-medium;
+          padding: 5px 10px;
+          border-radius: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
