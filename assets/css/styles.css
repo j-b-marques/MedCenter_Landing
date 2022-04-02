@@ -359,6 +359,9 @@ header {
   position: relative;
   cursor: pointer;
 }
+.swiper .swiper-wrapper {
+  margin-bottom: 30px;
+}
 .swiper .swiper-slide {
   transition: all 0.2s ease-in-out;
 }

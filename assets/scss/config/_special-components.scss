@@ -60,6 +60,11 @@
 .swiper {
   position: relative;
   cursor: pointer;
+
+  .swiper-wrapper {
+    margin-bottom: 30px;
+  }
+
   .swiper-slide {
     transition: all 0.2s ease-in-out;
   }
