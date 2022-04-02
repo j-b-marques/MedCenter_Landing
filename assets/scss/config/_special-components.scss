@@ -55,3 +55,35 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+//*****SWIPER
+.swiper {
+  position: relative;
+  cursor: pointer;
+  .swiper-slide {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .card:hover {
+    background-color: $action-color;
+    color: $body-color;
+    transform: scale(0.98);
+  }
+
+  .card:hover button .hover-underline-animation:after {
+    background-color: $body-color;
+  }
+  .card:hover button .hover-underline-animation {
+    color: $body-color;
+  }
+  .card:hover button svg {
+    fill: $body-color;
+  }
+
+  .swiper:hover .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: $body-color;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $action-color;
+  }
+}

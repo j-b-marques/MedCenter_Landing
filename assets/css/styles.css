@@ -355,6 +355,34 @@ header {
   transform-origin: bottom left;
 }
 
+.swiper {
+  position: relative;
+  cursor: pointer;
+}
+.swiper .swiper-slide {
+  transition: all 0.2s ease-in-out;
+}
+.swiper .card:hover {
+  background-color: #7fe2f9;
+  color: #ffffff;
+  transform: scale(0.98);
+}
+.swiper .card:hover button .hover-underline-animation:after {
+  background-color: #ffffff;
+}
+.swiper .card:hover button .hover-underline-animation {
+  color: #ffffff;
+}
+.swiper .card:hover button svg {
+  fill: #ffffff;
+}
+.swiper .swiper:hover .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #7fe2f9;
+}
+
 /******ALL FILES TO IMPORT*****/
 /**Develop Styles*/
 body {
