@@ -276,23 +276,28 @@ header {
   z-index: 4;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   background-color: white;
   height: 100%;
-  width: 20ch;
-  padding: 150px 15px 0;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 }
 .nav__mobile__menu i {
   position: absolute;
   font-size: 1.5rem;
+  color: #7fe2f9;
   top: 5%;
-  right: 20%;
+  right: 10%;
   cursor: pointer;
+}
+.nav__mobile__menu i:hover {
+  color: #0c0e23;
 }
 .nav__mobile__menu a {
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #7fe2f9;
 }
 .nav__mobile__menu a:hover {

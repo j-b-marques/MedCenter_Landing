@@ -99,24 +99,29 @@ header {
   z-index: 4;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   background-color: white;
   height: 100%;
-  width: 20ch;
-  padding: 150px 15px 0;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 
   i {
     position: absolute;
     font-size: $fs-big;
+    color: $action-color;
     top: 5%;
-    right: 20%;
+    right: 10%;
     cursor: pointer;
+    &:hover {
+      color: $brand-color;
+    }
   }
 
   a {
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: $action-color;
     &:hover {
       text-decoration: underline;
