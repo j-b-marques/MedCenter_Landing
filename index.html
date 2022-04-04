@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <!--=============== FONT AWESOME ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -13,8 +14,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!--=============== SCROLL REVEAL===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--=============== JQUERY ===============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>MedCenter</title>
 </head>
@@ -87,35 +88,35 @@
         <div class="container services__ct">
             <h1>Choose the right specialist.</h1>
             <div class="card__wrapper">
-                <div class="card card__1">
+                <div class="card card__1 square">
                     <i class="fa-solid fa-heart-pulse"></i>
                     <span>Cardiology</span>
                 </div>
-                <div class="card card__2">
+                <div class="card card__2 square">
                     <i class="fa-solid fa-lungs"></i>
                     <span>Lungs</span>
                 </div>
-                <div class="card card__3">
+                <div class="card card__3 square">
                     <i class="fa-solid fa-vials"></i>
                     <span>Analises</span>
                 </div>
-                <div class="card card__4">
+                <div class="card card__4 square">
                     <i class="fa-solid fa-teeth"></i>
                     <span>Dentist</span>
                 </div>
-                <div class="card card__5">
+                <div class="card card__5 square">
                     <i class="fa-solid fa-person-breastfeeding"></i>
                     <span>Nursing</span>
                 </div>
-                <div class="card card__6">
+                <div class="card card__6 square">
                     <i class="fa-solid fa-bacterium"></i>
                     <span>Virology</span>
                 </div>
-                <div class="card card__7">
+                <div class="card card__7 square">
                     <i class="fa-solid fa-prescription-bottle-medical"></i>
                     <span>Prescription</span>
                 </div>
-                <div class="card card__8">
+                <div class="card card__8 square">
                     <i class="fa-solid fa-syringe"></i>
                     <span>Vacines</span>
                 </div>
@@ -424,6 +425,7 @@
     <script src="assets/js/main.js"></script>
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
 
     <script>
         var swiper = new Swiper(".cards__staff__wrapper", {
