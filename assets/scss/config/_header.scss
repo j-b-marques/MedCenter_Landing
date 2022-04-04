@@ -6,6 +6,9 @@ header {
   z-index: 1;
   overflow: hidden;
 }
+.img__header {
+  display: none;
+}
 
 .overlay {
   position: absolute;

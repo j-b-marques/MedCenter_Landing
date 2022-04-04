@@ -90,6 +90,50 @@ select {
   }
 }
 /* For medium devices */
+@media screen and (min-width: 767px) {
+  header {
+    height: 100vh !important;
+  }
+
+  .img__header {
+    display: block !important;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+  }
+  .img__header img {
+    position: absolute;
+    width: 1200px;
+    top: 50%;
+    transform: translate(-20%, -20%);
+    left: 50%;
+  }
+
+  .overlay {
+    width: 65% !important;
+    height: 100% !important;
+    transform: skewX(9deg) !important;
+  }
+
+  form .input__wrp {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 20px;
+    margin-bottom: 20px !important;
+  }
+  form .input__wrp input {
+    width: 43% !important;
+  }
+  form button {
+    width: 30% !important;
+  }
+
+  .blog .blog__content__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
 /* For large devices */
 /*=============== GENERAL STYLES===============*/
 body {
@@ -181,6 +225,7 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+  /*   font-size: calc(15px + 0.390625vw) !important; */
 }
 
 header {
@@ -188,6 +233,10 @@ header {
   position: relative;
   z-index: 1;
   overflow: hidden;
+}
+
+.img__header {
+  display: none;
 }
 
 .overlay {
@@ -375,13 +424,13 @@ header {
   color: #ffffff;
   transform: scale(0.98);
 }
-.swiper .card:hover button .hover-underline-animation:after {
+.swiper .card:hover .hover-underline-animation:after {
   background-color: #ffffff;
 }
-.swiper .card:hover button .hover-underline-animation {
+.swiper .card:hover .hover-underline-animation {
   color: #ffffff;
 }
-.swiper .card:hover button svg {
+.swiper .card:hover svg {
   fill: #ffffff;
 }
 .swiper .swiper:hover .swiper-pagination .swiper-pagination-bullet-active {
@@ -460,6 +509,12 @@ body {
 }
 .contact .contact__ct form span {
   margin-bottom: 20px;
+}
+.contact .contact__ct form .input__wrp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact .contact__ct form input {
   width: 90%;
@@ -655,6 +710,7 @@ footer .footer__ct {
 footer .footer__ct .brand__logo__ft {
   color: #7fe2f9;
   font-size: 1.5rem;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -690,4 +746,7 @@ footer .footer__ct .links__ft__wrapper .btn__footer__wrapper button {
   padding: 5px 10px;
   border-radius: 0;
   margin-bottom: 10px;
+}
+footer .footer__ct .links__ft__wrapper .btn__footer__wrapper button a {
+  color: #0c0e23;
 }/*# sourceMappingURL=styles.css.map */

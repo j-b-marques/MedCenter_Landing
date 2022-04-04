@@ -23,6 +23,9 @@
 
     <header id="header">
         <div class="overlay"></div>
+        <div class="img__header">
+            <img src="assets/img/img11.png" alt="" srcset="">
+        </div>
         <div class="container header__ct">
             <nav>
                 <div class="brand__logo">
@@ -122,8 +125,11 @@
             <form>
                 <h2>Have a question?</h2>
                 <span>Make us a call</span>
-                <input type="text" name="name" id="" placeholder="Your name" required>
-                <input type="text" name="number" id="" placeholder="Your number" required>
+                <div class="input__wrp">
+                    <input type="text" name="name" id="" placeholder="Your name" required>
+                    <input type="text" name="number" id="" placeholder="Your number" required>
+                </div>
+
                 <button class="btn btn__form" type="submit"> Call me</button>
             </form>
             <div class="details__wrapper">
@@ -376,7 +382,9 @@
                     <a href="#">Contacts</a>
                 </div>
                 <div class="btn__footer__wrapper">
-                    <button class="btn btn__footer">Contact Us</button>
+                    <button class="btn btn__footer">
+                        <a href="#"> Contact us </a>
+                    </button>
                     <span>+351 9264383</span>
                 </div>
             </div>

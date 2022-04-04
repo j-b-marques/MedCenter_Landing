@@ -75,13 +75,13 @@
     transform: scale(0.98);
   }
 
-  .card:hover button .hover-underline-animation:after {
+  .card:hover  .hover-underline-animation:after {
     background-color: $body-color;
   }
-  .card:hover button .hover-underline-animation {
+  .card:hover  .hover-underline-animation {
     color: $body-color;
   }
-  .card:hover button svg {
+  .card:hover  svg {
     fill: $body-color;
   }
 
@@ -92,3 +92,5 @@
     background-color: $action-color;
   }
 }
+
+//***************
