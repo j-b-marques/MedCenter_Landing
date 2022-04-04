@@ -181,12 +181,13 @@
 
     form {
       padding: 20px 40px !important;
+      margin-right: 80px;
 
       .input__wrp {
         flex-direction: column !important;
 
         input {
-          width: 100% !important;
+          width: 100% !important; 
         }
       }
 

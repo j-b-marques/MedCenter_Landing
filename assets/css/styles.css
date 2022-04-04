@@ -247,6 +247,7 @@ p {
   }
   .contact__desktop__wrapper form {
     padding: 20px 40px !important;
+    margin-right: 80px;
   }
   .contact__desktop__wrapper form .input__wrp {
     flex-direction: column !important;
