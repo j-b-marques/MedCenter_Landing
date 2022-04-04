@@ -152,7 +152,7 @@ p {
     flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 1.5rem;
+    gap: 2.8rem;
   }
   footer .footer__ct .footer__links {
     display: flex !important;
@@ -178,8 +178,9 @@ p {
     font-size: 2.2rem !important;
   }
 
-  .brand__logo {
-    font-size: 3rem;
+  .brand__logo,
+.brand__logo__ft {
+    font-size: 3rem !important;
   }
 
   .nav__desktop {
