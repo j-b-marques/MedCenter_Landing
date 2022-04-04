@@ -190,6 +190,11 @@ p {
   .nav__desktop a {
     color: #0c0e23;
     font-weight: 700;
+    transition: all 1.5 ease-in-out;
+  }
+  .nav__desktop a:hover {
+    -webkit-text-decoration: 2px solid underline #0c0e23;
+            text-decoration: 2px solid underline #0c0e23;
   }
 
   .desktop__contact {
