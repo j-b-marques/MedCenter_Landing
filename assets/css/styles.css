@@ -91,6 +91,19 @@ select {
 }
 /* For medium devices */
 @media screen and (min-width: 767px) {
+  span,
+p {
+    font-size: 1rem !important;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .burguer__menu {
+    font-size: 1.5rem;
+  }
+
   header {
     height: 100vh !important;
   }
@@ -156,6 +169,19 @@ select {
 }
 /* For large devices */
 @media screen and (min-width: 1024px) {
+  span,
+p {
+    font-size: 1.1rem !important;
+  }
+
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  .brand__logo {
+    font-size: 3rem;
+  }
+
   .nav__desktop {
     display: flex !important;
     align-items: center;
@@ -167,7 +193,7 @@ select {
   }
 
   .desktop__contact {
-    font-size: 0.938rem;
+    font-size: 1.1rem;
     display: flex !important;
     text-transform: uppercase;
     flex-direction: column;
@@ -543,67 +569,61 @@ header {
   background-color: #7fe2f9;
 }
 
-/* Typetura */
-@-webkit-keyframes titles {
-  0% {
-    font-size: 1.5rem;
-  }
-  100% {
-    font-size: 2.2rem;
-  }
-}
-@keyframes titles {
-  0% {
-    font-size: 1.5rem;
-  }
-  100% {
-    font-size: 2.2rem;
-  }
-}
-@-webkit-keyframes paragraphs {
-  0% {
-    font-size: 0.938rem;
-  }
-  100% {
-    font-size: 1.2rem;
-  }
-}
-@keyframes paragraphs {
-  0% {
-    font-size: 0.938rem;
-  }
-  100% {
-    font-size: 1.2rem;
-  }
-}
-@-webkit-keyframes small-texts {
-  0% {
-    font-size: 0.813rem;
-  }
-  100% {
-    font-size: 1rem;
-  }
-}
-@keyframes small-texts {
-  0% {
-    font-size: 0.813rem;
-  }
-  100% {
-    font-size: 1rem;
-  }
-}
-h1 {
-  --tt-max: 1024;
-  --tt-key: titles;
-  font-size: 1.5rem;
-  /* -> fallback se a animacao/js nao funcionar */
+/*Button hover effect*/
+.cta {
+  position: relative;
+  padding: 12px 10px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-span {
-  --tt-max: 1024;
-  --tt-key: paragraphs;
-  font-size: 1.5rem;
-  /* -> fallback se a animacao/js nao funcionar */
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #4ab8da;
+  width: 52px;
+  height: 52px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #4ab8da;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
 }
 
 /******ALL FILES TO IMPORT*****/
