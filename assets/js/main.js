@@ -40,7 +40,7 @@ for (i = 0; i < allRevealsHeader.length; i++) {
   ScrollReveal().reveal(allRevealsHeader[i], {
     delay: 400,
     easing: 'ease-in',
-    duration: 600,
+    duration: 400,
   });
 }
 //***********MATRIX CARD*********/
