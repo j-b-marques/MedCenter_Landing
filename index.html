@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== BOXICONS ===============-->
+    <!--=============== FONT AWESOME ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,7 +15,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <!--###### Typetura ########-->
+    <script src="assets/js/typetura.min.js"></script>
     <title>MedCenter</title>
 </head>
 
@@ -30,7 +31,17 @@
             <nav>
                 <div class="brand__logo">
                     <i class="fa-brands fa-medrt"></i>
-                    <span>Med <br> center</span>
+                    <span>Medical <br> center</span>
+                </div>
+                <div class="nav__desktop">
+                    <a href="#">Specialities</a>
+                    <a href="#">Our Doctors</a>
+                    <a href="#">Ratings</a>
+                    <a href="#">Articles</a>
+                </div>
+                <div class="desktop__contact">
+                    <a href="#"> Contact us </a>
+                    <span>+351 9264383</span>
                 </div>
                 <span><i class="fa-solid fa-bars burguer__menu"></i></span>
             </nav>
@@ -122,40 +133,43 @@
                 <h1>Make an appointment with specialists.</h1>
                 <p>Avoid the waiting lines with no queues and stress</p>
             </div>
-            <form>
-                <h2>Have a question?</h2>
-                <span>Make us a call</span>
-                <div class="input__wrp">
-                    <input type="text" name="name" id="" placeholder="Your name" required>
-                    <input type="text" name="number" id="" placeholder="Your number" required>
-                </div>
+            <div class="contact__desktop__wrapper">
+                <form>
+                    <h2>Have a question?</h2>
+                    <span>Make us a call</span>
+                    <div class="input__wrp">
+                        <input type="text" name="name" id="" placeholder="Your name" required>
+                        <input type="text" name="number" id="" placeholder="Your number" required>
+                    </div>
 
-                <button class="btn btn__form" type="submit"> Call me</button>
-            </form>
-            <div class="details__wrapper">
-                <div class="detail detail__1">
-                    <i class="fa-solid fa-play i_1"></i>
-                    <div class="specs">
-                        <h4>Conveninent Format</h4>
-                        <p>Communication with a doctor by video or call, also wicth chat support</p>
+                    <button class="btn btn__form" type="submit"> Call me</button>
+                </form>
+                <div class="details__wrapper">
+                    <div class="detail detail__1">
+                        <i class="fa-solid fa-play i_1"></i>
+                        <div class="specs">
+                            <h4>Conveninent Format</h4>
+                            <p>Communication with a doctor by video or call, also wicth chat support</p>
+                        </div>
                     </div>
-                </div>
-                <div class="detail detail__2">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                    <div class="specs">
-                        <h4>Appointments History</h4>
-                        <p>For every appointment you will have a relatory in your personal account with all the
-                            conclusions</p>
+                    <div class="detail detail__2">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <div class="specs">
+                            <h4>Appointments History</h4>
+                            <p>For every appointment you will have a relatory in your personal account with all the
+                                conclusions</p>
+                        </div>
                     </div>
-                </div>
-                <div class="detail detail__3">
-                    <i class="fa-solid fa-file-signature"></i>
-                    <div class="specs">
-                        <h4>Free with VHI</h4>
-                        <p>Appointment policy with VHI</p>
+                    <div class="detail detail__3">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <div class="specs">
+                            <h4>Free with VHI</h4>
+                            <p>Appointment policy with VHI</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -357,20 +371,21 @@
                     <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
-        </div>
-        <div class="map__wrapper">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99580.03468287514!2d-9.230243237335381!3d38.743605703687756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1648930617523!5m2!1spt-PT!2spt"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99580.03468287514!2d-9.230243237335381!3d38.743605703687756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a61e4f33b%3A0x400ebbde49036d0!2sLisboa!5e0!3m2!1spt-PT!2spt!4v1649088854051!5m2!1spt-PT!2spt"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
     <footer id="footer">
         <div class="container footer__ct">
+
             <div class="brand__logo__ft">
                 <i class="fa-brands fa-medrt"></i>
-                <span>Med <br> center</span>
+                <span>Medical <br> Center</span>
             </div>
             <div class="links__ft__wrapper">
                 <div class="footer__links">
@@ -388,7 +403,13 @@
                     <span>+351 9264383</span>
                 </div>
             </div>
+        </div>
 
+
+        <div class="separator"></div>
+        <div class="cpy__wp">
+            <span>Copyright 2022</span>
+            <span>Medical Center</span>
         </div>
     </footer>
 

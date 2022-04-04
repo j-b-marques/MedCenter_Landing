@@ -17,13 +17,14 @@ header {
   width: 200px;
   transform: skewX(15deg);
   top: 0;
-  right: -110px;
+  right: -130px;
   z-index: 2;
 }
 
 .header__ct {
   position: relative;
   z-index: 3;
+  height: 100%;
 
   nav {
     display: flex;
@@ -131,4 +132,10 @@ header {
       color: $brand-color;
     }
   }
+}
+
+//********
+.nav__desktop,
+.desktop__contact {
+  display: none;
 }

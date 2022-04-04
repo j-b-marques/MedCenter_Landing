@@ -104,14 +104,14 @@ select {
   }
   .img__header img {
     position: absolute;
-    width: 1200px;
+    width: 1800px;
     top: 50%;
     transform: translate(-20%, -20%);
     left: 50%;
   }
 
   .overlay {
-    width: 65% !important;
+    width: 75% !important;
     height: 100% !important;
     transform: skewX(9deg) !important;
   }
@@ -133,8 +133,105 @@ select {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
   }
+
+  footer .footer__ct {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1.5rem;
+  }
+  footer .footer__ct .footer__links {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.8rem;
+  }
+  footer .links__ft__wrapper {
+    display: flex !important;
+  }
+  footer .brand__logo__ft {
+    gap: 1rem !important;
+  }
 }
 /* For large devices */
+@media screen and (min-width: 1024px) {
+  .nav__desktop {
+    display: flex !important;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .nav__desktop a {
+    color: #0c0e23;
+    font-weight: 700;
+  }
+
+  .desktop__contact {
+    font-size: 0.938rem;
+    display: flex !important;
+    text-transform: uppercase;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 700;
+    justify-content: center;
+  }
+  .desktop__contact a {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .burguer__menu {
+    display: none;
+  }
+
+  nav {
+    margin-bottom: 200px !important;
+  }
+
+  .header__bottom__wrapper {
+    display: flex;
+    flex-direction: row !important;
+    padding-top: 250px;
+  }
+
+  .img__header img {
+    transform: translate(-20%, -35%);
+  }
+
+  .overlay {
+    width: 65% !important;
+    height: 100% !important;
+    transform: skewX(25deg) !important;
+    right: -20% !important;
+  }
+
+  .card__wrapper {
+    grid-template-columns: repeat(5, 1fr) !important;
+  }
+
+  .contact__desktop__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .contact__desktop__wrapper form {
+    padding: 20px 40px !important;
+  }
+  .contact__desktop__wrapper form .input__wrp {
+    flex-direction: column !important;
+  }
+  .contact__desktop__wrapper form .input__wrp input {
+    width: 100% !important;
+  }
+  .contact__desktop__wrapper form button {
+    width: 100% !important;
+  }
+  .contact__desktop__wrapper .details__wrapper {
+    padding-top: 1rem;
+    width: 50ch;
+    margin-right: auto;
+  }
+}
 /*=============== GENERAL STYLES===============*/
 body {
   font-family: "Roboto", sans-serif;
@@ -246,13 +343,14 @@ header {
   width: 200px;
   transform: skewX(15deg);
   top: 0;
-  right: -110px;
+  right: -130px;
   z-index: 2;
 }
 
 .header__ct {
   position: relative;
   z-index: 3;
+  height: 100%;
 }
 .header__ct nav {
   display: flex;
@@ -354,6 +452,11 @@ header {
   color: #0c0e23;
 }
 
+.nav__desktop,
+.desktop__contact {
+  display: none;
+}
+
 /* From cssbuttons.io by @alexmaracinaru */
 .btn__staff {
   cursor: pointer;
@@ -440,6 +543,69 @@ header {
   background-color: #7fe2f9;
 }
 
+/* Typetura */
+@-webkit-keyframes titles {
+  0% {
+    font-size: 1.5rem;
+  }
+  100% {
+    font-size: 2.2rem;
+  }
+}
+@keyframes titles {
+  0% {
+    font-size: 1.5rem;
+  }
+  100% {
+    font-size: 2.2rem;
+  }
+}
+@-webkit-keyframes paragraphs {
+  0% {
+    font-size: 0.938rem;
+  }
+  100% {
+    font-size: 1.2rem;
+  }
+}
+@keyframes paragraphs {
+  0% {
+    font-size: 0.938rem;
+  }
+  100% {
+    font-size: 1.2rem;
+  }
+}
+@-webkit-keyframes small-texts {
+  0% {
+    font-size: 0.813rem;
+  }
+  100% {
+    font-size: 1rem;
+  }
+}
+@keyframes small-texts {
+  0% {
+    font-size: 0.813rem;
+  }
+  100% {
+    font-size: 1rem;
+  }
+}
+h1 {
+  --tt-max: 1024;
+  --tt-key: titles;
+  font-size: 1.5rem;
+  /* -> fallback se a animacao/js nao funcionar */
+}
+
+span {
+  --tt-max: 1024;
+  --tt-key: paragraphs;
+  font-size: 1.5rem;
+  /* -> fallback se a animacao/js nao funcionar */
+}
+
 /******ALL FILES TO IMPORT*****/
 /**Develop Styles*/
 body {
@@ -482,6 +648,7 @@ body {
 
 .contact .contact__ct {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 20px;
 }
 .contact .contact__ct .info__wrapper h1 {
   font-size: 1.5rem;
@@ -655,12 +822,18 @@ body {
 }
 
 .map {
-  padding-bottom: 0;
+  padding-bottom: 5rem;
 }
 .map .map__ct {
   background-color: #7fe2f9;
+  display: flex;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  gap: 30px;
 }
 .map .map__ct .contact__map__wrapper {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -681,6 +854,12 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 40px;
+}
+.map .map__ct .map__md__devices {
+  display: none;
+}
+.map .map__ct .mobile__map {
+  display: block;
 }
 .map .map__wrapper {
   position: relative;
@@ -749,4 +928,17 @@ footer .footer__ct .links__ft__wrapper .btn__footer__wrapper button {
 }
 footer .footer__ct .links__ft__wrapper .btn__footer__wrapper button a {
   color: #0c0e23;
+}
+footer .separator {
+  height: 1px;
+  width: 100%;
+  background-color: #0c0e23;
+  margin-bottom: 10px;
+}
+footer .cpy__wp {
+  font-size: 0.938rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }/*# sourceMappingURL=styles.css.map */

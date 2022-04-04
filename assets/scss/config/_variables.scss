@@ -21,10 +21,17 @@ $fw-bold: 700;
 $fw-bolder: 900;
 
 // Responsive typography
-@media screen and (min-width: 968px) {
+
+@media screen and (min-width: 767px) {
   $fs-big: 2rem;
   $fs-normal: 1rem;
   $fs-small: 0.875rem;
+}
+
+@media screen and (min-width: 968px) {
+  $fs-big: 2.2rem !important;
+  $fs-normal: 1.3rem;
+  $fs-small: 1rem;
 }
 
 /*========== Z index ==========*/
