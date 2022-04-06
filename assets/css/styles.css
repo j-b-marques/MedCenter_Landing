@@ -841,6 +841,9 @@ body {
 .blog .blog__ct .blog__lead__wrapper p {
   font-weight: 500;
 }
+.blog .blog__ct .blog__content__wrapper {
+  gap: 60px;
+}
 .blog .blog__ct .blog__content__wrapper .img__blog {
   display: flex;
   justify-content: center;
@@ -857,7 +860,7 @@ body {
 }
 .blog .blog__ct .blog__content__wrapper p {
   font-size: 0.813rem;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .blog .blog__ct .blog__content__wrapper button {
   float: inline-end;

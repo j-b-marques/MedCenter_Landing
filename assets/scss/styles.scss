@@ -219,6 +219,7 @@ body {
       }
     }
     .blog__content__wrapper {
+      gap: 60px;
       .img__blog {
         display: flex;
         justify-content: center;
@@ -237,7 +238,7 @@ body {
 
       p {
         font-size: $fs-small;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
       }
       button {
         float: inline-end;
