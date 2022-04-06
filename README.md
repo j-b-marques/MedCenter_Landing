@@ -1,4 +1,4 @@
-# 📱 Medical Clinic Landing Page
+# 🧑‍⚕️ Medical Clinic Landing Page
 
 - Medical clinic template landing page
 - Smooth scrolling in each section.
