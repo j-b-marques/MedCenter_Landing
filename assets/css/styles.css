@@ -93,11 +93,11 @@ select {
 @media screen and (min-width: 767px) {
   span,
 p {
-    font-size: 1rem !important;
+    font-size: 0.938rem !important;
   }
 
   h1 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
 
   .burguer__menu {
@@ -142,6 +142,9 @@ p {
     width: 30% !important;
   }
 
+  .blog p {
+    font-size: 0.938rem !important;
+  }
   .blog .blog__content__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -171,7 +174,7 @@ p {
 @media screen and (min-width: 1024px) {
   span,
 p {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
 
   h1 {
@@ -240,6 +243,10 @@ p {
 
   .card__wrapper {
     grid-template-columns: repeat(5, 1fr) !important;
+  }
+
+  .contact__ct {
+    border-radius: 20px !important;
   }
 
   .contact__desktop__wrapper {
@@ -678,7 +685,6 @@ body {
 
 .contact .contact__ct {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border-radius: 20px;
 }
 .contact .contact__ct .info__wrapper h1 {
   font-size: 1.5rem;
@@ -835,9 +841,14 @@ body {
 .blog .blog__ct .blog__lead__wrapper p {
   font-weight: 500;
 }
-.blog .blog__ct .blog__content__wrapper img {
+.blog .blog__ct .blog__content__wrapper .img__blog {
+  display: flex;
+  justify-content: center;
+}
+.blog .blog__ct .blog__content__wrapper .img__blog img {
+  width: 290px;
   margin-bottom: 20px;
-  border-radius: 22px;
+  border-radius: 8px;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 .blog .blog__ct .blog__content__wrapper h2 {
@@ -845,6 +856,7 @@ body {
   margin-bottom: 20px;
 }
 .blog .blog__ct .blog__content__wrapper p {
+  font-size: 0.813rem;
   margin-bottom: 50px;
 }
 .blog .blog__ct .blog__content__wrapper button {

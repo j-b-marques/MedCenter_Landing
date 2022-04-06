@@ -47,7 +47,6 @@ body {
 .contact {
   .contact__ct {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    border-radius: 20px;
     .info__wrapper {
       h1 {
         font-size: $fs-big;
@@ -220,10 +219,15 @@ body {
       }
     }
     .blog__content__wrapper {
-      img {
-        margin-bottom: 20px;
-        border-radius: 22px;
-        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+      .img__blog {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 290px;
+          margin-bottom: 20px;
+          border-radius: 8px;
+          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+        }
       }
 
       h2 {
@@ -232,6 +236,7 @@ body {
       }
 
       p {
+        font-size: $fs-small;
         margin-bottom: 50px;
       }
       button {

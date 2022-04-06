@@ -12,11 +12,11 @@
 @media screen and (min-width: 767px) {
   span,
   p {
-    font-size: 1rem !important;
+    font-size: $fs-normal !important;
   }
 
   h1 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
   }
 
   .burguer__menu {
@@ -68,6 +68,9 @@
 
   //*********
   .blog {
+    p {
+      font-size: $fs-normal !important;
+    }
     .blog__content__wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr) !important;
@@ -104,7 +107,7 @@
 @media screen and (min-width: 1024px) {
   span,
   p {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
   }
 
   h1 {
@@ -176,6 +179,11 @@
   }
 
   //********
+
+  .contact__ct {
+    border-radius: 20px !important;
+  }
+
   .contact__desktop__wrapper {
     display: flex;
     flex-direction: row-reverse;
