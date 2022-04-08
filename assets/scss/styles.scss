@@ -317,12 +317,18 @@ footer {
     align-items: center;
     .brand__logo__ft {
       color: $action-color;
-      font-size: 1.5rem;
       text-transform: uppercase;
       display: flex;
       align-items: center;
       gap: 20px;
       margin-bottom: 20px;
+      i {
+        font-size: 2.6rem;
+      }
+
+      span {
+        font-size: 1.1rem;
+      }
     }
     .links__ft__wrapper {
       display: grid;
@@ -365,13 +371,19 @@ footer {
     width: 100%;
     background-color: $brand-color;
     margin-bottom: 10px;
+    opacity: 0.2;
   }
 
   .cpy__wp {
     font-size: $fs-normal;
-    font-weight: $fw-light;
+    font-weight: $fw-medium;
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    .jm {
+      color: $action-color;
+      opacity: 1 !important;
+    }
   }
 }

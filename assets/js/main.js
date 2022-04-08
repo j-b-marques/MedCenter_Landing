@@ -22,6 +22,28 @@ submitBtn.addEventListener('click', (e) => {
   e.preventDefault(); //* for demo purposes
 });
 
+//***********MATRIX square*********/
+$(document).ready(function () {
+  $('.square').mousemove(function (e) {
+    var offset = $(this).offset();
+    var relX = e.pageX - offset.left;
+    var relY = e.pageY - offset.top;
+    var offsetMinX = $(this).width();
+    var offsetMinY = $(this).height();
+    var currentX = (relX += offsetMinX * -0.5);
+    var currentY = (relY += offsetMinY * -0.5);
+    var newX = currentX / 500000;
+    var newY = currentY / 1000000;
+    $(this).css(
+      'transform',
+      'matrix3d(1.025,0,0,' + -newX + ',0,1.025,0,' + -newY + ',0,0,1,0,0,0,0,1)'
+    );
+  });
+  $('.square').mouseout(function () {
+    $(this).css('transform', 'matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)');
+  });
+});
+
 //*************SCROLL REVEALL **********/
 
 const allRevealsHeader = [
@@ -43,24 +65,3 @@ for (i = 0; i < allRevealsHeader.length; i++) {
     duration: 400,
   });
 }
-//***********MATRIX CARD*********/
-$(document).ready(function () {
-  $('.square').mousemove(function (e) {
-    var offset = $(this).offset();
-    var relX = e.pageX - offset.left;
-    var relY = e.pageY - offset.top;
-    var offsetMinX = $(this).width();
-    var offsetMinY = $(this).height();
-    var currentX = (relX += offsetMinX * -0.5);
-    var currentY = (relY += offsetMinY * -0.5);
-    var newX = currentX / 500000;
-    var newY = currentY / 1000000;
-    $(this).css(
-      'transform',
-      'matrix3d(1.025,0,0,' + -newX + ',0,1.025,0,' + -newY + ',0,0,1,0,0,0,0,1)'
-    );
-  });
-  $('.square').mouseout(function () {
-    $(this).css('transform', 'matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)');
-  });
-});
