@@ -100,6 +100,7 @@ select {
   }
   header .header__lead__wrapper {
     max-width: 60ch !important;
+    margin-bottom: 100px !important;
   }
 
   .img__header {
@@ -426,7 +427,7 @@ header {
   color: #ffffff;
 }
 .header__ct .header__lead__wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .header__ct .header__lead__wrapper h1 {
   font-size: 1.5rem;
@@ -457,7 +458,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 50px;
 }
 .header__ct .header__bottom__wrapper .service {
   display: flex;
